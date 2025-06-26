@@ -1,4 +1,4 @@
-@use "abstracts/colors" as *;
+@use "abstracts/variables" as *;
 
 @mixin rwd($pixels, $type: max) {
     @if $type ==max or $type ==min {
@@ -12,8 +12,8 @@
     }
 }
 
-@mixin btn($bg:$primary-color, $fontSize:1.5rem, $fontWeight:600, $color:$secondary-color, $borderColor:$primary-color,
-    $padding:.9rem 2.3rem, $mobileFontSize:1.4rem, $mobilePadding: 1rem 1.6rem) {
+@mixin btn($bg: $primary-color, $fontSize: 1.5rem, $fontWeight: 600, $color: $secondary-color, $borderColor: $primary-color,
+    $padding: .9rem 2.3rem, $mobileFontSize: 1.4rem, $mobilePadding: 1rem 1.6rem) {
     display: inline-block;
     width: max-content;
     white-space: nowrap;
@@ -35,7 +35,7 @@
     @content;
 }
 
-@mixin flex($justify:center, $align:center, $gap: 0, $flow: row nowrap) {
+@mixin flex($justify: center, $align: center, $gap: 0, $flow: row nowrap) {
     display: flex;
     justify-content: $justify;
     align-items: $align;
@@ -44,7 +44,7 @@
     @content;
 }
 
-@mixin positioning ($position:absolute, $top:auto, $right:auto, $bottom: auto, $left:auto, $width:auto, $height:auto){
+@mixin positioning ($position: absolute, $top: auto, $right: auto, $bottom: auto, $left: auto, $width: auto, $height: auto) {
     position: $position;
     top: $top;
     right: $right;
@@ -53,27 +53,27 @@
     width: $width;
     height: $height;
 
-    @if($left == 50% and $top == 50%){
+    @if($left == 50% and $top == 50%) {
         transform: translate(-50%, -50%);
     }
 
-    @else if($right == 50% and $top == 50%){
+    @else if($right == 50% and $top == 50%) {
         transform: translate(50%, -50%);
     }
 
-    @else if($top == 50%){
+    @else if($top == 50%) {
         transform: translate(-50%);
     }
 
-    @else if($bottom == 50%){
+    @else if($bottom == 50%) {
         transform: translate(50%);
     }
 
-    @else if($left == 50%){
+    @else if($left == 50%) {
         transform: translateX(-50%);
     }
 
-    @else if($right == 50%){
+    @else if($right == 50%) {
         transform: translateX(50%);
     }
 }

@@ -2,18 +2,18 @@
 
 .btn {
     display: inline-block;
-    width: max-content;
+    min-width: 17rem;
     background: transparent;
-    border: .1rem solid $primary-color;
-    color: $primary-color;
-    padding: .8rem 4rem;
-    font-size: 1.6rem;
-    letter-spacing: 1.5;
+    border: .2rem solid $primary-color;
+    color: $light-color;
+    padding: 1.2rem 0;
+    font-size: 1.5rem;
     font-weight: 500;
     white-space: nowrap;
     text-align: center;
+    border-radius: 4rem;
     cursor: pointer;
-    
+
     @include rwd(568) {
         width: 100%;
         max-width: 16.3rem;
@@ -22,33 +22,22 @@
     &-primary {
         @extend .btn;
         background-color: $primary-color;
-        color: $secondary-color;
+
+        &:hover i {
+            color: $primary-color;
+        }
 
         &:hover {
-            background-color: inherit;
+            background: transparent;
         }
     }
 
-    &-secondary {
+    &-outline {
         @extend .btn;
-        // color: #FFF;
-        // border: .2rem solid #FFF;
+        background: transparent;
 
-        // &:hover {
-        //     background-color: #FFF;
-        //     color: $primary-color;
-        // }
-    }
-
-    &-tertiary {
-        @extend .btn;
-        // background-color: #fce11c;
-        // border: 0.2rem solid #fce11c;
-        // color: #FFF;
-
-        // &:hover {
-        //     background-color: transparent;
-        //     color: black;
-        // }
+        &:hover {
+            background-color: $primary-color;
+        }
     }
 }
