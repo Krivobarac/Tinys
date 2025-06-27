@@ -31,6 +31,8 @@ body {
     background-color: $secondary-color;
     color: $light-color;
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 img {
@@ -75,3 +77,7 @@ a {
 //   color: $primary-color !important;
 //   font-weight: 600 !important;
 // }
+
+footer-component {
+    margin-top: auto;
+}
