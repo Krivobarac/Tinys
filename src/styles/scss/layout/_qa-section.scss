@@ -1,0 +1,76 @@
+@use "../abstracts/index" as *;
+
+.qa {
+  &__title {
+    font-size: 3.2rem;
+    font-weight: 600;
+    color: $light-color;
+    text-align: center;
+
+    @include rwd(992) {
+      font-size: 2.4rem;
+      max-width: 25rem;
+      margin: auto;
+    }
+  }
+
+  &__collapsable {
+    @include flex($justify: space-between, $align: stretch, $flow: row wrap, $gap: 1.6rem);
+    margin-top: 4.8rem;
+    padding: 3.2rem;
+    background-color: $dark-color;
+    border-radius: 1.6rem;
+
+    @include rwd(768) {
+      padding: 1.6rem;
+    }
+  }
+
+  &__item {
+    flex-basis: 47%;
+    padding: 2.5rem;
+    border-radius: 1rem;
+    cursor: pointer;
+
+    @include rwd(1200) {
+      flex-basis: 100%;
+    }
+
+    &.active {
+      background-color: $light-color;
+      color: $dark-color;
+    }
+  }
+
+  &__header {
+    @include flex($justify: space-between);
+
+    @include rwd(576) {
+      font-size: 1.4rem;
+    }
+
+    i {
+      font-size: 1.5rem;
+      transition: 0.4s linear;
+
+      &.active {
+        transform: rotate(90deg);
+        color: $dark-color;
+      }
+    }
+  }
+
+  &__body {
+    max-height: 0;
+    overflow: hidden;
+    font-size: 1.4rem;
+    font-weight: 300;
+    transition: 0.4s linear;
+
+    &.active {
+      border-top: .1rem solid rgba(241, 241, 241, 1);
+      max-height: 20rem;
+      padding-top: 2rem;
+    }
+  }
+}
