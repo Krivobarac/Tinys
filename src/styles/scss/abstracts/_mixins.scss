@@ -62,11 +62,11 @@
     }
 
     @else if($top == 50%) {
-        transform: translate(-50%);
+        transform: translateY(-50%);
     }
 
     @else if($bottom == 50%) {
-        transform: translate(50%);
+        transform: translateY(50%);
     }
 
     @else if($left == 50%) {

@@ -1,5 +1,6 @@
 import './components/nav-component.js';
 import './components/footer-component.js';
+import './components/socials-component.js';
 
 // Function to toggle the background color visibility of the navigation bar on scrolling
 (function () {
