@@ -12,11 +12,20 @@
     white-space: nowrap;
     text-align: center;
     border-radius: 4rem;
+    text-transform: capitalize;
     cursor: pointer;
 
     @include rwd(568) {
         width: 100%;
         max-width: 16.3rem;
+    }
+
+    i {
+        margin-left: 1rem;
+    }
+
+    &:hover {
+        color: $light-color;
     }
 
     &-primary {

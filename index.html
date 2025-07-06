@@ -1,21 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Tiny's remodeling - Home</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
-            rel="stylesheet">
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="src/styles/css/style.css">
-        <script type="module" src="src/scripts/main.js" defer async></script>
-    </head>
 
-    <body>
-        <nav-component active-page="home"></nav-component>
-        <footer-component></footer-component>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiny's remodeling - Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="src/styles/css/style.css">
+    <script type="module" src="src/scripts/main.js" defer async></script>
+</head>
+
+<body>
+    <nav-component active-page="home"></nav-component>
+    <header class="header">
+        <div class="header__side-bg home"></div>
+        <div class="header__side-imgs home">
+            <div class="header-img img-one">
+                <span class="header-img__number">01</span>
+                <p class="header-img__title">Construction Work</p>
+            </div>
+            <div class="header-img img-two">
+                <span class="header-img__number">02</span>
+                <p class="header-img__title">Finishing Touches</p>
+            </div>
+            <div class="header-img img-three">
+                <span class="header-img__number">03</span>
+                <p class="header-img__title">Repairs &amp; Installations</p>
+            </div>
+        </div>
+        <div class="header__text-block">
+            <h1 class="header__text-block__title">
+                renovate your<br>home with us
+            </h1>
+            <p class="header__text-block__text">
+                From quick fixes to dream renovations, we bring your vision<br>to life with expert craftsmanship and
+                attention to detail.
+            </p>
+            <div class="header__text-block__btns home">
+                <a href="projects.html" class="btn btn-primary">
+                    view more
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+                <a href="contact.html" class="btn btn-outline">
+                    contact us
+                </a>
+            </div>
+        </div>
+    </header>
+    <socials-component></socials-component>
+</body>
+
 </html>
