@@ -1,0 +1,231 @@
+@use "../abstracts/index" as *;
+
+// ==========================================================================
+// Prrojects section
+// ==========================================================================
+
+.projects {
+    position: relative;
+    scroll-margin-top: 10rem;
+
+    @include rwd(576) {
+        scroll-margin-top: 8rem;
+    }
+
+    &__text-block {
+        text-align: right;
+
+        @include rwd(992) {
+            text-align: center;
+        }
+    }
+
+    &__title {
+        font-weight: 600;
+        font-size: 4.2rem;
+        margin-bottom: 2rem;
+
+        @include rwd(992) {
+            font-size: 3.2rem;
+            max-width: 25rem;
+            margin: 0 auto 2rem;
+        }
+    }
+
+    &__text {
+        font-weight: 300;
+        max-width: 87rem;
+        margin-left: auto;
+
+        @include rwd(992) {
+            margin: auto;
+            width: 28rem;
+        }
+    }
+
+    &__gallery {
+        @include flex($justify: space-between, $align: stretch, $flow: row wrap);
+        row-gap: 15rem;
+        margin-top: 8rem;
+
+        @include rwd(1200) {
+            row-gap: 7rem;
+        }
+    }
+
+    &__item {
+        flex-basis: 30%;
+
+        @include rwd(1200) {
+            flex-basis: 45%;
+        }
+
+        @include rwd(768) {
+            flex-basis: 100%;
+        }
+
+        &.hidden {
+            @include rwd(768) {
+                display: none;
+            }
+        }
+    }
+
+    &__name {
+        font-size: 2.4rem;
+        font-weight: 500;
+        text-transform: uppercase;
+        margin-bottom: 2rem;
+
+        @include rwd(768) {
+            text-align: center;
+        }
+
+        span {
+            color: $primary-color;
+        }
+    }
+
+    &__imgs {
+        position: relative;
+        overflow: hidden;
+    }
+
+    &__slides {
+        display: flex;
+
+        img {
+            width: 100%;
+            flex-shrink: 0;
+        }
+    }
+
+    &__btn {
+        @include positioning($top: 50%);
+        border-radius: 50%;
+        background-color: transparent;
+        width: 3rem;
+        height: 3rem;
+        border: .2rem solid $light-color;
+        cursor: pointer;
+
+        &:hover {
+            color: $primary-color;
+            border-color: $primary-color;
+        }
+
+        &--right {
+            right: 1rem;
+        }
+
+        &--left {
+            left: 1rem;
+        }
+    }
+
+    &__labels {
+        @include flex($align: stretch, $flow: row wrap, $gap: .9rem);
+        margin-top: 2rem;
+
+        @include rwd(1200) {
+            justify-content: center;
+        }
+    }
+
+    &__label {
+        text-transform: capitalize;
+        font-size: 1.3rem;
+        border-radius: 5rem;
+        padding: 1rem 1.6rem;
+        border: .1rem solid rgba(255, 255, 255, 0.3);
+    }
+
+    &--btn {
+        margin: 3.2rem auto 0;
+        display: none;
+
+        @include rwd(768) {
+            display: block;
+        }
+    }
+
+    &__color {
+        @include positioning($top: 45%, $right: 0, $width: 20rem);
+
+        @include rwd(1200) {
+            display: none;
+        }
+    }
+}
+
+// ==========================================================================
+// Vision section
+// ==========================================================================
+.vision {
+    @include flex($flow: column, $gap: 1.6rem);
+    position: relative;
+    margin: 9rem auto;
+    background: linear-gradient(rgba(0, 0, 0, 0.88), rgba(0, 0, 0, 0.88)),
+        url("../../assets/img/projects-vision.jpg") no-repeat center;
+    background-size: cover;
+    border-radius: 2rem;
+    text-align: center;
+    padding: 10rem 0;
+
+    @include rwd(1200) {
+        margin: 7rem auto;
+    }
+
+    &__title {
+        font-weight: 600;
+        font-size: 3.6rem;
+
+        span {
+            color: $primary-color;
+        }
+
+        @include rwd(992) {
+            font-size: 2.6rem;
+            width: 28rem;
+        }
+    }
+
+    &__text {
+        font-weight: 300;
+
+        @include rwd(992) {
+            width: 35rem;
+        }
+
+        @include rwd(576) {
+            font-size: 1.4rem;
+            max-width: 100%;
+        }
+    }
+
+    &__img {
+        opacity: 0.2;
+        width: 39rem;
+        margin: 2rem 0;
+
+        @include rwd(992) {
+            width: 20rem;
+        }
+    }
+
+    &__brush {
+        @include positioning($bottom: -34rem, $left: -17rem, $width: 30rem);
+        opacity: 0.2;
+
+        @include rwd(1200) {
+            display: none;
+        }
+    }
+}
+
+.hero-dots {
+    @include positioning($top: 80%, $right: 0, $width: 12rem, $height: 30.4rem);
+    background: url("../../assets/img/projects icon.png") no-repeat left center;
+    background-size: cover;
+    z-index: 1;
+}
