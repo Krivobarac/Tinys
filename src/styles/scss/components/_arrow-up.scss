@@ -1,0 +1,24 @@
+@use "../abstracts/index" as *;
+
+.arrow__up {
+  @include positioning($position: fixed, $right: 2rem, $bottom: 2rem, $width: 4.5rem, $height: 4.5rem);
+  line-height: 4.5rem;
+  border-radius: 50%;
+  text-align: center;
+  background-color: $primary-color;
+  color: $light-color;
+  border: .2rem solid $primary-color;
+  transform: translateX(20rem);
+  transition: 0.4s linear;
+  cursor: pointer;
+  z-index: 1;
+
+  &:hover {
+    background: transparent;
+    color: $primary-color;
+  }
+
+  &.active {
+    transform: translateX(0);
+  }
+}

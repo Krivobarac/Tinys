@@ -2,7 +2,12 @@
 
 @use "components/buttons";
 @use "components/socials";
+@use "components/arrow-up";
 
 @use "layout/nav";
 @use "layout/header";
+@use "layout/qa-section";
 @use "layout/footer";
+
+@use "pages/projects";
+@use "pages/about";
