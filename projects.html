@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,7 +14,38 @@
     <link rel="stylesheet" href="src/styles/css/style.css">
     <script type="module" src="src/scripts/main.js" defer async></script>
 </head>
+
 <body>
     <nav-component active-page="projects"></nav-component>
+    <header class="header">
+        <div class="header__side-bg projects"></div>
+        <div class="header__side-imgs projects">
+            <div class="triangle-block">
+                <div class="triangle-block--one"></div>
+                <div class="triangle-block--two"></div>
+                <div class="triangle-block--three"></div>
+            </div>
+        </div>
+        <div class="header__text-block">
+            <h1 class="header__text-block__title">
+                We RE-BUILD<br>YOUR dream HOME
+            </h1>
+            <p class="header__text-block__text">
+                Turning your vision into reality. From modern kitchens to complete home renovations, we
+                <br>rebuild your dream house with creativity and care. Let's make it real, together.
+            </p>
+            <div class="header__text-block__btns">
+                <a href="#projects" class="btn btn-primary">
+                    our projects
+                </a>
+            </div>
+        </div>
+        <a href="#projects" id="arrow">
+            <i class="fas fa-angle-double-down"></i>
+        </a>
+    </header>
+    <socials-component></socials-component>
+    <footer-component></footer-component>
 </body>
+
 </html>

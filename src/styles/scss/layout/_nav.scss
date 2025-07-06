@@ -5,6 +5,7 @@
     @include flex($justify: space-between);
     background: transparent;
     padding: 2.4rem 6.4rem;
+    z-index: 1;
 
     @include rwd(576) {
         padding: 0 3.2rem;

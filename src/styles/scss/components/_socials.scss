@@ -1,0 +1,14 @@
+@use "../abstracts/index" as *;
+
+.social__icons {
+  @include positioning($position: fixed, $top: 50%);
+  @include flex($align: stretch, $flow: column, $gap: 2.4rem);
+  background-color: $dark-color;
+  padding: 3.2rem 1.6rem;
+  border-top-right-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+
+  @include rwd(1200) {
+    display: none;
+  }
+}
