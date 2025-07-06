@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,7 +14,34 @@
     <link rel="stylesheet" href="src/styles/css/style.css">
     <script type="module" src="src/scripts/main.js" defer async></script>
 </head>
+
 <body>
     <nav-component active-page="services"></nav-component>
+    <header class="header">
+        <div class="header__side-bg services"></div>
+        <div class="header__side-imgs services"></div>
+        <div class="header__text-block">
+            <h1 class="header__text-block__title">
+                You have an issue,<br>we have a solution
+            </h1>
+            <p class="header__text-block__text">
+                From repairs to renovations, we handle it all. Quality craftsmanship and<br>exceptional service bring
+                your vision to life.
+            </p>
+            <div class="header__text-block__btns">
+                <a href="projects.html" class="btn btn-primary">
+                    projects
+                </a>
+                <a href="contact.html" class="btn btn-outline">
+                    contact
+                </a>
+            </div>
+        </div>
+
+        <a href="#numbers" class="fas fa-angle-double-down" id="arrow"></a>
+    </header>
+    <socials-component></socials-component>
+    <footer-component></footer-component>
 </body>
+
 </html>

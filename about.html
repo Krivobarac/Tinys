@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,7 +14,29 @@
     <link rel="stylesheet" href="src/styles/css/style.css">
     <script type="module" src="src/scripts/main.js" defer async></script>
 </head>
+
 <body>
     <nav-component active-page="about"></nav-component>
+    <header class="header">
+        <div class="header__side-bg about"></div>
+        <div class="header__side-imgs about"></div>
+        <div class="header__text-block">
+            <h1 class="header__text-block__title">
+                Transforming Spaces,<br>Elevating Living
+            </h1>
+            <p class="header__text-block__text">
+                Whether it’s upgrading your kitchen or modernizing your bathroom, our remodeling services
+                <br>bring comfort, value, and joy to your everyday living.
+            </p>
+            <div class="header__text-block__btns">
+                <a href="#about" class="btn btn-primary">
+                    see more
+                </a>
+            </div>
+        </div>
+    </header>
+    <socials-component></socials-component>
+    <footer-component></footer-component>
 </body>
+
 </html>

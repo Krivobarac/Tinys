@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,7 +14,28 @@
     <link rel="stylesheet" href="src/styles/css/style.css">
     <script type="module" src="src/scripts/main.js" defer async></script>
 </head>
+
 <body>
     <nav-component active-page="blog"></nav-component>
+    <header class="header">
+        <div class="header__side-bg blog"></div>
+        <div class="header__side-imgs blog"></div>
+        <div class="header__text-block blog">
+            <h1 class="header__text-block__title">
+                Home Improvement<br>Insights & Inspiration
+            </h1>
+            <p class="header__text-block__text">
+                Latest trends, ideas, and expert advice to transform your space.
+            </p>
+            <div class="header__text-block__btns">
+                <a href="#blog" class="btn btn-outline">
+                    read more
+                </a>
+            </div>
+        </div>
+    </header>
+    <socials-component></socials-component>
+    <footer-component></footer-component>
 </body>
+
 </html>
