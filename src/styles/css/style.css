@@ -671,6 +671,7 @@ a:hover {
   border-top-right-radius: 5rem;
   position: relative;
   padding: 6.4rem 0;
+  margin-top: 6.4rem;
   background: linear-gradient(180deg, #000000 0%, #aa0e00 661.48%);
 }
 @media (max-width: 992px) {
@@ -865,7 +866,7 @@ a:hover {
 @media (max-width: 992px) {
   .projects__text {
     margin: auto;
-    width: 28rem;
+    max-width: 28rem;
   }
 }
 .projects__gallery {
@@ -1078,6 +1079,112 @@ a:hover {
   background: url("../../assets/img/projects icon.png") no-repeat left center;
   background-size: cover;
   z-index: 1;
+}
+@media (max-width: 992px) {
+  .hero-dots {
+    display: none;
+  }
+}
+
+.blog-section {
+  scroll-margin-top: 7.5rem;
+}
+.blog-section .section-header {
+  text-align: center;
+}
+.blog-section .section-header .section-title {
+  color: #FF1500;
+  font-weight: 600;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+}
+.blog-section .section-header .section-subtitle {
+  font-weight: 700;
+  font-size: 3.2rem;
+  text-transform: capitalize;
+}
+@media (max-width: 576px) {
+  .blog-section .section-header .section-subtitle {
+    max-width: 100%;
+    font-size: 2.5rem;
+  }
+}
+.blog-section__wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 3.2rem;
+  flex-flow: row wrap;
+  margin-top: 4.5rem;
+  row-gap: 15rem;
+}
+@media (max-width: 576px) {
+  .blog-section__wrapper {
+    row-gap: 10rem;
+  }
+}
+.blog-section__item {
+  display: flex;
+  justify-content: flex-end;
+  align-items: stretch;
+  gap: 1.6rem;
+  flex-flow: column;
+  flex-basis: 30%;
+}
+@media (max-width: 1200px) {
+  .blog-section__item {
+    flex-basis: 45%;
+  }
+}
+@media (max-width: 768px) {
+  .blog-section__item {
+    flex-basis: 100%;
+  }
+}
+.blog-section__img {
+  display: block;
+  height: 25rem;
+}
+.blog-section__img img {
+  width: 100%;
+  height: 100%;
+}
+.blog-section__title {
+  font-weight: 500;
+  font-size: 2.2rem;
+  display: block;
+  margin-bottom: auto;
+}
+@media (max-width: 768px) {
+  .blog-section__title {
+    font-size: 1.5rem;
+  }
+}
+.blog-section__date {
+  margin-top: 0.8rem;
+}
+.blog-section__date i {
+  font-size: 1.4rem;
+}
+.blog-section__date span {
+  font-weight: 300;
+  font-size: 1rem;
+  color: rgb(141, 141, 141);
+}
+.blog-section__text {
+  color: rgb(197, 197, 197);
+  text-align: justify;
+  line-height: 1.8rem;
+  font-size: 1.1rem;
+}
+.blog-section__link {
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration-line: underline;
+  text-decoration-color: #FF1500;
+  text-underline-offset: 0.5rem;
 }
 
 .info {
