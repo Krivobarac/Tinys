@@ -5,6 +5,7 @@
     border-top-right-radius: 5rem;
     position: relative;
     padding: 6.4rem 0;
+    margin-top: 6.4rem;
     background: linear-gradient(180deg, #000000 0%, #aa0e00 661.48%);
 
     @include rwd(992) {
