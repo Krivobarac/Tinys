@@ -3,6 +3,7 @@
 @use "components/buttons";
 @use "components/socials";
 @use "components/arrow-up";
+@use "components/contact-form";
 
 @use "layout/nav";
 @use "layout/header";
@@ -12,3 +13,4 @@
 @use "pages/projects";
 @use "pages/blog";
 @use "pages/about";
+@use "pages/contact";

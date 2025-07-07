@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,9 +14,22 @@
     <link rel="stylesheet" href="src/styles/css/style.css">
     <script type="module" src="src/scripts/main.js" defer async></script>
 </head>
+
 <body>
     <nav-component active-page="contact"></nav-component>
-    
+    <div class="contact" id="contact">
+        <h1 class="contact__title">
+            How Can We Assist You?
+        </h1>
+        <p class="contact__text">
+            We'd love to hear from you! Whether you have a question, need help, or
+            just want to share your thoughts, feel free to reach out. Our team is
+            here to listen and assist you!
+        </p>
+        <img src="src/assets/img/key.png" class="contact__bg-img" alt="image of key">
+    </div>
+    <contact-form-component></contact-form-component>
     <footer-component></footer-component>
 </body>
+
 </html>
