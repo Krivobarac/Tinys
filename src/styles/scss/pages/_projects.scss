@@ -39,7 +39,7 @@
 
         @include rwd(992) {
             margin: auto;
-            width: 28rem;
+            max-width: 28rem;
         }
     }
 
@@ -228,4 +228,8 @@
     background: url("../../assets/img/projects icon.png") no-repeat left center;
     background-size: cover;
     z-index: 1;
+
+    @include rwd(992) {
+        display: none;
+    }
 }
