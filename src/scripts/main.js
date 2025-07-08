@@ -41,18 +41,20 @@ import './components/contact-form-component.js';
 (function loadMore() {
     let loadMoreBtn = document.querySelector(".projects--btn");
 
-    loadMoreBtn.addEventListener("click", () => {
-        let projects = document.querySelectorAll('[data-item="projects-item"]');
-        projects.forEach((project) => project.classList.remove("hidden"));
+    if (loadMoreBtn) {
+        loadMoreBtn.addEventListener("click", () => {
+            let projects = document.querySelectorAll('[data-item="projects-item"]');
+            projects.forEach((project) => project.classList.remove("hidden"));
 
-        window.addEventListener("resize", () => {
-            if (window.innerWidth > 768) {
-                for (let i = 3; i < projects.length; i++) {
-                    projects[i].classList.add("hidden");
+            window.addEventListener("resize", () => {
+                if (window.innerWidth > 768) {
+                    for (let i = 3; i < projects.length; i++) {
+                        projects[i].classList.add("hidden");
+                    }
                 }
-            }
+            });
         });
-    });
+    }
 })();
 
 // This function moves the slides of a project slider left or right by updating the current slide index
@@ -121,7 +123,9 @@ import './components/contact-form-component.js';
 
     const scrollBtn = document.querySelector(".arrow__up");
 
-    scrollBtn.addEventListener("click", () => {
-        window.scroll({ top: 0, behavior: "smooth" });
-    });
+    if (scrollBtn) {
+        scrollBtn.addEventListener("click", () => {
+            window.scroll({ top: 0, behavior: "smooth" });
+        });
+    }
 })();
