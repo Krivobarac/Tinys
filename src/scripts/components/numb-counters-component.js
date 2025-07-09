@@ -3,19 +3,19 @@ class NumbCountersComponent extends HTMLElement {
         this.innerHTML = `
             <section class="numb-counters container" id="counters">
                 <div class="numb-counters__item">
-                    <p class="numb-counters__number" data-target="250" data-key="counter">250+</p>
+                    <p class="numb-counters__number" data-target="250" data-key="counter">0+</p>
                     <p class="numb-counters__name">projects done</p>
                 </div>
                 <div class="numb-counters__item">
-                    <p class="numb-counters__number" data-target="500" data-key="counter">500+</p>
+                    <p class="numb-counters__number" data-target="500" data-key="counter">0+</p>
                     <p class="numb-counters__name">satisfied clients</p>
                 </div>
                 <div class="numb-counters__item">
-                    <p class="numb-counters__number" data-target="60" data-key="counter">60+</p>
+                    <p class="numb-counters__number" data-target="60" data-key="counter">0+</p>
                     <p class="numb-counters__name">hurricane rebuilds</p>
                 </div>
                 <div class="numb-counters__item">
-                    <p class="numb-counters__number" data-target="45" data-key="counter">45+</p>
+                    <p class="numb-counters__number" data-target="45" data-key="counter">0+</p>
                     <p class="numb-counters__name">states served</p>
                 </div>
             </section>`;

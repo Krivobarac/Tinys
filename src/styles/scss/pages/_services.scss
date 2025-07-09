@@ -46,7 +46,7 @@
         }
 
         &__img {
-            @include flex();
+            @include flex;
             width: 6rem;
             height: 6rem;
             border-radius: 50%;
