@@ -3,29 +3,6 @@
 .blog-section {
     scroll-margin-top: 7.5rem;
 
-    .section-header {
-        text-align: center;
-
-        .section-title {
-            color: $primary-color;
-            font-weight: 600;
-            font-size: 1.4rem;
-            text-transform: uppercase;
-            margin-bottom: 1.6rem;
-        }
-
-        .section-subtitle {
-            font-weight: 700;
-            font-size: 3.2rem;
-            text-transform: capitalize;
-
-            @include rwd(576) {
-                max-width: 100%;
-                font-size: 2.5rem;
-            }
-        }
-    }
-
     &__wrapper {
         @include flex($justify: flex-start, $align: stretch, $flow: row wrap, $gap: 3.2rem);
         margin-top: 4.5rem;
