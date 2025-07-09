@@ -4,6 +4,9 @@ import './components/socials-component.js';
 import './components/qa-component.js';
 import './components/arrow-up-component.js';
 import './components/contact-form-component.js';
+import './components/numb-counters-component.js';
+import './components/blog-section-component.js';
+import './components/projects-section-component.js';
 
 // Function to toggle the background color visibility of the navigation bar on scrolling
 (function () {
@@ -113,17 +116,17 @@ import './components/contact-form-component.js';
 (function arrowUpHandle() {
     const arrowUp = document.querySelector(".arrow__up");
 
-    document.addEventListener("scroll", () => {
-        if (window.scrollY > 100) {
-            arrowUp.classList.add("active");
-        } else {
-            arrowUp.classList.remove("active");
-        }
-    });
+    if (arrowUp) {
+        document.addEventListener("scroll", () => {
+            if (window.scrollY > 100) {
+                arrowUp.classList.add("active");
+            } else {
+                arrowUp.classList.remove("active");
+            }
+        });
 
-    const scrollBtn = document.querySelector(".arrow__up");
+        const scrollBtn = document.querySelector(".arrow__up");
 
-    if (scrollBtn) {
         scrollBtn.addEventListener("click", () => {
             window.scroll({ top: 0, behavior: "smooth" });
         });
