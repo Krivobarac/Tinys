@@ -1,17 +1,13 @@
 @use '../abstracts/_index.scss' as *;
 
-
-//=========================================================================
-//          INFO section
-//=========================================================================
-.info{
+.info {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     gap: 0;
 
-    @include rwd(1200){
+    @include rwd(1200) {
         display: flex;
         justify-content: center;
         flex-direction: column;
@@ -19,17 +15,18 @@
         text-align: center;
     }
 
-    &__item{
+    &__item {
         flex-basis: 30%;
 
         @include rwd(1200) {
             flex-basis: 80%;
         }
+
         @include rwd(576) {
             flex-basis: 100%;
         }
 
-        .section-title{
+        .section-title {
             text-transform: uppercase;
             color: $primary-color;
             margin: 0 0 16px;
@@ -37,7 +34,7 @@
             font-weight: 600;
         }
 
-        .section-subtitle{
+        .section-subtitle {
             text-transform: uppercase;
             font-size: 32px;
             font-weight: 700;
@@ -53,7 +50,7 @@
             }
         }
 
-        .info__p{
+        .info__p {
             text-align: left;
             line-height: 1.8;
             font-size: 1rem;
@@ -74,10 +71,8 @@
         }
     }
 
-    &__item--flex{
-
+    &__item--flex {
         @include flex(flex-start, center, row, 1rem);
-
         flex-basis: 20%;
         padding: 0 2rem;
         position: relative;
@@ -88,7 +83,7 @@
         }
     }
 
-    &__line{
+    &__line {
         background: $light-color;
         position: absolute;
         display: block;
@@ -98,27 +93,27 @@
         content: "";
     }
 
-    .line-1{
+    .line-1 {
         top: 0;
         left: 0;
     }
 
-    .line-2{
+    .line-2 {
         top: 0;
         right: 0;
     }
 
-    .line-3{
+    .line-3 {
         bottom: 0;
         left: 0;
     }
 
-    .line-4{
+    .line-4 {
         bottom: 0;
         right: 0;
     }
 
-    .line-5{
+    .line-5 {
         top: 0;
         left: 0;
         height: 100%;
@@ -126,7 +121,7 @@
         width: 3px;
     }
 
-    .line-6{
+    .line-6 {
         top: 0;
         right: 0;
         height: 100%;
@@ -134,7 +129,7 @@
         width: 3px;
     }
 
-    &__number{
+    &__number {
         font-size: 78px;
         font-weight: 700;
         color: $primary-color;
@@ -145,15 +140,11 @@
         }
     }
 
-    .section-header{
+    .section-header {
         text-align: left;
 
         @include rwd(1200) {
             text-align: center;
         }
     }
-
-    
-
-    
 }

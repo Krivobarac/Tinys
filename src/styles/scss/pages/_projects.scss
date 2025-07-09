@@ -100,7 +100,7 @@
         }
     }
 
-    &__btn {
+    &__arrow {
         @include positioning($top: 50%);
         border-radius: 50%;
         background-color: transparent;
