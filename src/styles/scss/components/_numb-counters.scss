@@ -1,0 +1,46 @@
+@use "../abstracts/index" as *;
+
+.numb-counters {
+	@include flex($flow: row wrap);
+	position: relative;
+	scroll-margin-top: 10rem;
+
+	@include rwd(992) {
+		row-gap: 6rem;
+	}
+
+	@include rwd(576) {
+		scroll-margin-top: 8rem;
+	}
+
+	&__item {
+		flex-basis: 20%;
+
+		@include rwd(992) {
+			flex-basis: 45%;
+		}
+	}
+
+	&__number {
+		font-size: 4.4rem;
+		color: $primary-color;
+		text-align: center;
+		font-weight: 700;
+
+		@include rwd(576) {
+			font-size: 3.6rem;
+		}
+	}
+
+	&__name {
+		font-size: 1.4rem;
+		color: $light-color;
+		text-align: center;
+		text-transform: uppercase;
+
+		@include rwd(576) {
+			width: 10rem;
+			margin: auto;
+		}
+	}
+}

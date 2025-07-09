@@ -4,13 +4,16 @@
 @use "components/socials";
 @use "components/arrow-up";
 @use "components/contact-form";
+@use "components/numb-counters";
 
 @use "layout/nav";
 @use "layout/header";
 @use "layout/qa-section";
+@use "layout/blog-section";
+@use "layout/projects-section";
 @use "layout/footer";
 
 @use "pages/projects";
-@use "pages/blog";
+@use "pages/services";
 @use "pages/about";
 @use "pages/contact";
