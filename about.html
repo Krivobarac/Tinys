@@ -17,7 +17,7 @@
 </head>
 
 <body>
-    <nav-component active-page="about"></nav-component>
+    <nav-component active-page="about" img-path="src/assets/img"></nav-component>
     <header class="header">
         <div class="header__side-bg about"></div>
         <div class="header__side-imgs about"></div>
@@ -35,8 +35,9 @@
                 </a>
             </div>
         </div>
+        <a href="#info" class="fas fa-angle-double-down" id="arrow"></a>
     </header>
-    <section class="info container">
+    <section class="info container" id="info">
         <article class="info__item info__item--flex">
             <div class="info__line line-1"></div>
             <div class="info__line line-2"></div>
@@ -218,7 +219,7 @@
             </a>
         </article>
         <article class="offer__item">
-            <img src="src/assets/img/construction-workers.jpg" alt="construction workers in the kitchen"
+            <img src="src/assets/img/construction-workers.webp" alt="construction workers in the kitchen"
                 class="offer__img">
         </article>
     </section>
@@ -226,6 +227,7 @@
     <contact-form-component></contact-form-component>
     <blog-section-component items="3"></blog-section-component>
     <socials-component></socials-component>
-    <footer-component></footer-component>
+    <arrow-up-component></arrow-up-component>
+    <footer-component img-path="src/assets/img"></footer-component>
 </body>
 </html>

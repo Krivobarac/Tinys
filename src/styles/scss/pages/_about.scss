@@ -10,6 +10,7 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 0;
+    scroll-margin-top: 100px;
 
     @include rwd(1200) {
         @include flex($flow: column, $gap: 4.8rem);
@@ -161,7 +162,7 @@
 
 .about {
     background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
-        url("../../assets/img/about-services.jpg");
+        url("../../assets/img/about-services.webp");
     background-size: cover;
     border-radius: 1.6rem;
     margin: 70 auto;
