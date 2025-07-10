@@ -90,7 +90,7 @@
 
                 &.img-three {
                     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-                        url("../../assets/img/technician.jpg") no-repeat center;
+                        url("../../assets/img/technician.webp") no-repeat center;
                     background-size: cover;
                 }
             }
@@ -100,7 +100,7 @@
             flex: 1;
             clip-path: polygon(0 1%, 100% 0%, 100% 75%, 0 100%);
             background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-                url("../../assets/img/projects-main.jpg") no-repeat center;
+                url("../../assets/img/projects-main.webp") no-repeat center;
             background-size: cover;
 
             @include rwd(992) {
@@ -150,7 +150,7 @@
         &.about {
             flex: 1;
             background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)),
-                url("../../assets/img/about-main.jpg") no-repeat center;
+                url("../../assets/img/about-main.webp") no-repeat center;
             background-size: cover;
 
         }
@@ -158,7 +158,7 @@
         &.blog {
             flex: 1;
             background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-                url("../../assets/img/blog-main.jpg") no-repeat center;
+                url("../../assets/img/blog-main.webp") no-repeat center;
             background-size: cover;
         }
     }

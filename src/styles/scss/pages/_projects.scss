@@ -101,11 +101,9 @@
     }
 
     &__arrow {
-        @include positioning($top: 50%);
+        @include positioning($top: 50%, $width: 3rem, $height: 3rem);
         border-radius: 50%;
         background-color: transparent;
-        width: 3rem;
-        height: 3rem;
         border: .2rem solid $light-color;
         cursor: pointer;
 
@@ -166,7 +164,7 @@
     position: relative;
     margin: 9rem auto;
     background: linear-gradient(rgba(0, 0, 0, 0.88), rgba(0, 0, 0, 0.88)),
-        url("../../assets/img/projects-vision.jpg") no-repeat center;
+        url("../../assets/img/projects-vision.webp") no-repeat center;
     background-size: cover;
     border-radius: 2rem;
     text-align: center;
@@ -225,7 +223,7 @@
 
 .hero-dots {
     @include positioning($top: 80%, $right: 0, $width: 12rem, $height: 30.4rem);
-    background: url("../../assets/img/projects icon.png") no-repeat left center;
+    background: url("../../assets/img/projects icon.webp") no-repeat left center;
     background-size: cover;
     z-index: 1;
 
