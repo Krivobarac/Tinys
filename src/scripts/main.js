@@ -7,6 +7,8 @@ import './components/contact-form-component.js';
 import './components/numb-counters-component.js';
 import './components/blog-section-component.js';
 import './components/projects-section-component.js';
+import './components/article-header-component.js';
+import './components/article-sharing-component.js';
 
 // Function to toggle the background color visibility of the navigation bar on scrolling
 (function () {

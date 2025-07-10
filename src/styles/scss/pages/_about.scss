@@ -10,6 +10,7 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 0;
+    scroll-margin-top: 100px;
 
     @include rwd(1200) {
         @include flex($flow: column, $gap: 4.8rem);
