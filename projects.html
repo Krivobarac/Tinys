@@ -8,12 +8,24 @@
     <title>Tiny's remodeling - Projects</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
+    <link rel="preload" as="style"
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" media="print" onload="this.media='all'">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"
+        media="print" onload="this.media='all'">
     <link rel="stylesheet" href="src/styles/css/style.css">
-    <script type="module" src="src/scripts/main.js" defer async></script>
+    <script type="module" src="src/scripts/main.js"></script>
+    <noscript>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    </noscript>
 </head>
 
 <body>
@@ -60,8 +72,8 @@
                 <p class="projects__name">Stairs</p>
                 <div class="projects__imgs">
                     <div class="projects__slides">
-                        <img src="src/assets/img/projects-gallery/stairs1.webp" alt="image of stairs before reperation">
-                        <img src="src/assets/img/projects-gallery/stairs2.webp" alt="image of stairs after reperation">
+                        <img src="src/assets/img/projects-gallery/stairs1.webp" alt="image of stairs before reperation" loading="lazy">
+                        <img src="src/assets/img/projects-gallery/stairs2.webp" alt="image of stairs after reperation" loading="lazy">
                     </div>
                     <button class="projects__arrow projects__arrow--left" onclick="moveSlide(-1, 'slider1')">
                         ❮
@@ -83,9 +95,9 @@
                 <div class="projects__imgs">
                     <div class="projects__slides">
                         <img src="src/assets/img/projects-gallery/Wood Floor Before1.webp"
-                            alt="image of wood before floor repration">
+                            alt="image of wood before floor repration" loading="lazy">
                         <img src="src/assets/img/projects-gallery/Wood Floor After2.webp"
-                            alt="image of wood after floor repration">
+                            alt="image of wood after floor repration" loading="lazy">
                     </div>
                     <button class="projects__arrow projects__arrow--left" onclick="moveSlide(-1, 'slider2')">
                         ❮
@@ -108,9 +120,9 @@
                 <div class="projects__imgs">
                     <div class="projects__slides">
                         <img src="src/assets/img/projects-gallery/Floor & Walls Before1.webp"
-                            alt="image of floor and walls before reparation">
+                            alt="image of floor and walls before reparation" loading="lazy">
                         <img src="src/assets/img/projects-gallery/Floor & Walls After2.webp"
-                            alt="image of floor and walls after reparation">
+                            alt="image of floor and walls after reparation" loading="lazy">
                     </div>
                     <button class="projects__arrow projects__arrow--left" onclick="moveSlide(-1, 'slider3')">
                         ❮
@@ -136,9 +148,9 @@
                 <div class="projects__imgs">
                     <div class="projects__slides">
                         <img src="src/assets/img/projects-gallery/wal-window1.webp"
-                            alt="image of wall window  before reparation">
+                            alt="image of wall window  before reparation" loading="lazy">
                         <img src="src/assets/img/projects-gallery/wal-window2.webp"
-                            alt="image of wall window  after reparation">
+                            alt="image of wall window  after reparation" loading="lazy">
                     </div>
                     <button class="projects__arrow projects__arrow--left" onclick="moveSlide(-1, 'slider4')">
                         ❮
@@ -163,9 +175,9 @@
                 <div class="projects__imgs">
                     <div class="projects__slides">
                         <img src="src/assets/img/projects-gallery/corner pantry before1.webp"
-                            alt="image of corner pantry before reparation ">
+                            alt="image of corner pantry before reparation " loading="lazy">
                         <img src="src/assets/img/projects-gallery/corner pantry after2.webp"
-                            alt="image of corner pantry after reparation ">
+                            alt="image of corner pantry after reparation " loading="lazy">
                     </div>
                     <button class="projects__arrow projects__arrow--left" onclick="moveSlide(-1, 'slider5')">
                         ❮
@@ -188,8 +200,8 @@
                 <p class="projects__name">Kitchen <span>&amp;</span> bathroom</p>
                 <div class="projects__imgs">
                     <div class="projects__slides">
-                        <img src="src/assets/img/projects-gallery/Kitchen.webp" alt="image of kitchen after reparation">
-                        <img src="src/assets/img/projects-gallery/Bathroom.webp" alt="image of bathrom after reparation">
+                        <img src="src/assets/img/projects-gallery/Kitchen.webp" alt="image of kitchen after reparation" loading="lazy">
+                        <img src="src/assets/img/projects-gallery/Bathroom.webp" alt="image of bathrom after reparation" loading="lazy">
                     </div>
                     <button class="projects__arrow projects__arrow--left" onclick="moveSlide(-1, 'slider6')">
                         ❮
@@ -212,7 +224,7 @@
         <button class="projects--btn btn-outline">
             load more
         </button>
-        <img src="src/assets/img/color.webp" class="projects__color" alt="">
+        <img src="src/assets/img/color.webp" class="projects__color" alt="" loading="lazy">
     </section>
     <section class="vision container">
         <h3 class="vision__title">
@@ -222,9 +234,9 @@
             Got questions or ready to discuss your ideas? Contact us today to get
             started!
         </p>
-        <img src="src/assets/img/projects logo.webp" class="vision__img" alt="tinys remodeling logo new version">
+        <img src="src/assets/img/projects logo.webp" class="vision__img" alt="tinys remodeling logo new version" loading="lazy">
         <a href="contact.html" class="btn btn-primary">contact us</a>
-        <img src="src/assets/img/paint-brush.webp" class="vision__brush" alt="" aria-hidden="true">
+        <img src="src/assets/img/paint-brush.webp" class="vision__brush" alt="" loading="lazy">
     </section>
     <qa-component></qa-component>
     <socials-component></socials-component>
