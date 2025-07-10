@@ -1,13 +1,15 @@
 class FooterComponent extends HTMLElement {
     connectedCallback() {
+        let stepBackNum = this.getAttribute('step-back-num') ?? 0;
+        let pathStepBack = '../'.repeat(stepBackNum);
         this.innerHTML = `
                     <footer class="footer">
                         <div class="footer__wrapper container">
                             <article class="footer__item">
-                                <a href="index.html" class="footer__logo">
-                                    <img src="src/assets/img/desktop-logo.webp" alt="tinys remodeling logo for desktop"
+                                <a href="${pathStepBack}index.html" class="footer__logo">
+                                    <img src="${pathStepBack}src/assets/img/desktop-logo.webp" alt="tinys remodeling logo for desktop"
                                         class="footer__logo-desktop">
-                                    <img src="src/assets/img/mobile-logo.webp" alt="tinys remodeling fro mobile"
+                                    <img src="${pathStepBack}src/assets/img/mobile-logo.webp" alt="tinys remodeling fro mobile"
                                         class="footer__logo-mobile">
                                 </a>
 
@@ -16,10 +18,10 @@ class FooterComponent extends HTMLElement {
                                 </div>
 
                                 <div class="footer__menu">
-                                    <a href="projects.html">projects</a>
-                                    <a href="services.html">services</a>
-                                    <a href="about.html">about</a>
-                                    <a href="contact.html">contact</a>
+                                    <a href="${pathStepBack}projects.html">projects</a>
+                                    <a href="${pathStepBack}services.html">services</a>
+                                    <a href="${pathStepBack}about.html">about</a>
+                                    <a href="${pathStepBack}contact.html">contact</a>
                                 </div>
                             </article>
 
@@ -27,7 +29,7 @@ class FooterComponent extends HTMLElement {
                                 <h3 class="footer__heading">
                                     Transforming spaces, building dreams - <span>together</span> !
                                 </h3>
-                                <a href="contact.html" class="footer__btn btn btn-primary">contact us</a>
+                                <a href="${pathStepBack}contact.html" class="footer__btn btn btn-primary">contact us</a>
                             </article>
 
                             <div class="footer__social">

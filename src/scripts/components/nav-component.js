@@ -1,6 +1,8 @@
 class NavComponent extends HTMLElement {
     connectedCallback() {
-        const activePage = this.getAttribute('active-page')
+        const activePage = this.getAttribute('active-page');
+        let stepBackNum = this.getAttribute('step-back-num') ?? 0;
+        let pathStepBack = '../'.repeat(stepBackNum);
         this.innerHTML = `
                     <nav class="nav">
                         <input type="checkbox" id="nav-toggle" hidden>
@@ -11,18 +13,18 @@ class NavComponent extends HTMLElement {
                             <div class="line"></div>
                         </label>
 
-                        <a href="index.html" class="nav__logo">
-                            <img src="src/assets/img/desktop-logo.webp" alt="Tiny's desktop logo" class="nav__logo-desktop">
-                            <img src="src/assets/img/mobile-logo.webp" alt="Tiny's mobile logo" class="nav__logo-mobile">
+                        <a href="${pathStepBack}index.html" class="nav__logo">
+                            <img src="${pathStepBack}src/assets/img/desktop-logo.webp" alt="Tiny's desktop logo" class="nav__logo-desktop">
+                            <img src="${pathStepBack}src/assets/img/mobile-logo.webp" alt="Tiny's mobile logo" class="nav__logo-mobile">
                         </a>
 
                         <ul class="nav__list">
-                            <li><a href="projects.html" class="nav__link ${activePage === 'projects' ? 'active' : ''}">projects</a></li>
-                            <li><a href="services.html" class="nav__link ${activePage === 'services' ? 'active' : ''}">services</a></li>
-                            <li><a href="about.html" class="nav__link ${activePage === 'about' ? 'active' : ''}">about</a></li>
-                            <li><a href="blog.html" class="nav__link ${activePage === 'blog' ? 'active' : ''}">read</a></li>
+                            <li><a href="${pathStepBack}projects.html" class="nav__link ${activePage === 'projects' ? 'active' : ''}">projects</a></li>
+                            <li><a href="${pathStepBack}services.html" class="nav__link ${activePage === 'services' ? 'active' : ''}">services</a></li>
+                            <li><a href="${pathStepBack}about.html" class="nav__link ${activePage === 'about' ? 'active' : ''}">about</a></li>
+                            <li><a href="${pathStepBack}blog.html" class="nav__link ${activePage === 'blog' ? 'active' : ''}">read</a></li>
                             <li>
-                                <a href="contact.html" class="nav__link nav__link--btn btn-primary ${activePage === 'contact' ? 'active' : ''}">contact us</a>
+                                <a href="${pathStepBack}contact.html" class="nav__link nav__link--btn btn-primary ${activePage === 'contact' ? 'active' : ''}">contact us</a>
                             </li>
                         </ul>
 
@@ -33,16 +35,16 @@ class NavComponent extends HTMLElement {
                             
                             <ul class="mobile-menu__list">
                                 <li>
-                                    <a href="projects.html" class="mobile-menu__link ${activePage === 'projects' ? 'active' : ''}">projects</a>
+                                    <a href="${pathStepBack}projects.html" class="mobile-menu__link ${activePage === 'projects' ? 'active' : ''}">projects</a>
                                 </li>
                                 <li>
-                                    <a href="services.html" class="mobile-menu__link ${activePage === 'services' ? 'active' : ''}">services</a>
+                                    <a href="${pathStepBack}services.html" class="mobile-menu__link ${activePage === 'services' ? 'active' : ''}">services</a>
                                 </li>
                                 <li>
-                                    <a href="about.html" class="mobile-menu__link ${activePage === 'about' ? 'active' : ''}">about us</a>
+                                    <a href="${pathStepBack}about.html" class="mobile-menu__link ${activePage === 'about' ? 'active' : ''}">about us</a>
                                 </li>
                                 <li>
-                                    <a href="blog.html" class="mobile-menu__link ${activePage === 'blog' ? 'active' : ''}">read</a>
+                                    <a href="${pathStepBack}blog.html" class="mobile-menu__link ${activePage === 'blog' ? 'active' : ''}">read</a>
                                 </li>
                             </ul>
 
@@ -63,7 +65,7 @@ class NavComponent extends HTMLElement {
                                 </a>
                             </div>
 
-                            <a href="contact.html" class="btn btn-primary" ${activePage === 'contact' ? 'active' : ''}>contact us</a>
+                            <a href="${pathStepBack}contact.html" class="btn btn-primary" ${activePage === 'contact' ? 'active' : ''}>contact us</a>
                         </div>
                     </nav>`;
 

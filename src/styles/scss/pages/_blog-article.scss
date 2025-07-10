@@ -1,0 +1,146 @@
+@use "../abstracts/index" as *;
+
+.article-header {
+    @include flex;
+    height: 70vh;
+    width: 100%;
+
+    &--la {
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+            url("../../../src/assets/img/blog-gallery/la-fire.webp") no-repeat;
+        background-size: cover;
+    }
+
+    &--kitchen {
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+            url("../../../src/assets/img/blog-gallery/kitchen.webp") no-repeat;
+        background-size: cover;
+    }
+
+    &--kitchen1 {
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+            url("../../../src/assets/img/blog-gallery/Kitchen\ remodeling.webp") no-repeat center;
+        background-size: cover;
+    }
+
+    &--bathroom {
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+            url("../../../src/assets/img/blog-gallery/bathroom.webp") no-repeat;
+        background-size: cover;
+    }
+
+    &--garden {
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+            url("../../../src/assets/img/blog-gallery/gardener-plants-flowers-garden-closeup-garden-care-gardening-concept.webp") no-repeat;
+        background-size: cover;
+    }
+
+    &__title {
+        text-transform: uppercase;
+        font-size: clamp(30px, 5vw, 46px);
+        margin: 0 10%;
+
+        span {
+            color: $primary-color;
+        }
+    }
+}
+
+.article {
+    &__text {
+        line-height: 1.6;
+        margin-bottom: 2.4rem;
+
+        span {
+            font-weight: bold;
+        }
+
+        &.heading {
+            font-size: 2.4rem;
+        }
+    }
+
+    &__title {
+        margin: 3.2rem 0;
+        font-size: 3.2rem;
+        text-transform: capitalize;
+
+        @include rwd(576) {
+            font-size: 2.4rem;
+        }
+    }
+
+    &__list {
+        padding-left: 4.8rem;
+
+        @include rwd(576) {
+            padding-left: 3.2rem;
+        }
+
+        &__item {
+            list-style-type: disc;
+
+            margin-bottom: 1.6rem;
+
+            span {
+                font-weight: bold;
+            }
+        }
+    }
+
+    &__link {
+        font-weight: 700;
+        text-decoration: underline;
+        text-transform: capitalize;
+        display: inline-block;
+        margin-bottom: 3.2rem;
+    }
+
+    &__sharing {
+        @include flex($justify: space-between, $align: flex-end);
+
+        @include rwd(576) {
+            flex-direction: column;
+            align-items: flex-start;
+            row-gap: 3.2rem;
+        }
+    }
+
+    &__share {
+        color: $primary-color;
+
+        font-weight: 700;
+        font-size: 2rem;
+
+        @include rwd(576) {
+            font-size: 1.6rem;
+        }
+    }
+
+    &__icons {
+        margin-top: 1.6rem;
+        display: flex;
+        gap: 1.6rem;
+
+        a {
+            font-size: 2.08rem;
+        }
+    }
+
+    &__blogs {
+        @include flex;
+        gap: .8rem;
+
+        a {
+            font-size: 1.4rem;
+
+            &:hover {
+                color: $primary-color;
+            }
+        }
+
+        span {
+            color: $primary-color;
+        }
+    }
+}
